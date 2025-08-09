@@ -1,0 +1,24 @@
+
+arianEl$nd4
+
+~/Documentos/sistemas_digitais/Vivado/2024.2   15:38:36   5ms⠀
+$ source settings64.sh
+
+$ vivado
+
+
+-----------------------
+instalar  os drivers no linux:
+/home/ariane/Documentos/sistemas_digitais/Vivado/2024.2/data/xicom/cable_drivers/lin64/install_script/install_drivers
+sudo ./install_drivers
+----------------------------------------
+execução:
+~/Documentos/sistemas_digitais/Vivado/2024.2   15:38:36   5ms⠀
+$ source settings64.sh
+
+$ vivado
+
+***************************************************************************************aula 07/05/2025
+
+MSB - numero do bit mais significativo  no caso, 3
+3 downto 0 -> vetor da posição 3jo 

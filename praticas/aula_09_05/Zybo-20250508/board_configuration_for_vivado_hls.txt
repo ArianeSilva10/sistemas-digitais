@@ -1,0 +1,14 @@
+*****************************************************
+Para adicionar as configurações da Zybo no Vivado HLS
+*****************************************************
+
+1)Navegar até o diretório  <XILINX_INSTAL_DIR>\Vivado_HLS\2017.4\common\config
+
+2) Abrir o arquivo Vivadohls_board.xml em um editor de texto
+
+3) Adicionar a linha abaixo no xml:
+
+<board name="Zybo" display_name="Zybo" family="zynq" part="xc7z010clg400-1"  device="xc7z010" package="clg400" speedgrade="-1" vendor="digilentinc.com" />
+
+*****************************************************
+

@@ -1,0 +1,251 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../CPU.gen/sources_1/bd/cpu",
+      "name": "cpu",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1"
+    },
+    "design_tree": {
+      "datapath_0": "",
+      "register_file_0": "",
+      "mux4x1_0": ""
+    },
+    "components": {
+      "datapath_0": {
+        "vlnv": "xilinx.com:module_ref:datapath:1.0",
+        "ip_revision": "1",
+        "xci_name": "cpu_datapath_0_0",
+        "xci_path": "ip/cpu_datapath_0_0/cpu_datapath_0_0.xci",
+        "inst_hier_path": "datapath_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "datapath",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rn_sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "rm_sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "rd_sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "rd_wr": {
+            "direction": "I"
+          },
+          "op_ula": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rd_ram": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "rd_immd": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "sel_rd_mux": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Rm": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "Rn": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "sp_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "flag_z": {
+            "direction": "O"
+          },
+          "flag_c": {
+            "direction": "O"
+          },
+          "pc_en": {
+            "direction": "I"
+          },
+          "pc_src": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "immed": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "pc_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "io_write": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "io_read": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "register_file_0": {
+        "vlnv": "xilinx.com:module_ref:register_file:1.0",
+        "ip_revision": "1",
+        "xci_name": "cpu_register_file_0_0",
+        "xci_path": "ip/cpu_register_file_0_0/cpu_register_file_0_0.xci",
+        "inst_hier_path": "register_file_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "register_file",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Rm_sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Rn_sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Rd_sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "Rd_wr": {
+            "direction": "I"
+          },
+          "Rd": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "Rm": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "Rn": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "sp_value": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "mux4x1_0": {
+        "vlnv": "xilinx.com:module_ref:mux4x1:1.0",
+        "ip_revision": "1",
+        "xci_name": "cpu_mux4x1_0_1",
+        "xci_path": "ip/cpu_mux4x1_0_1/cpu_mux4x1_0_1.xci",
+        "inst_hier_path": "mux4x1_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4x1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "I1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "I2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "I3": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "O0": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    }
+  }
+}

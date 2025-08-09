@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Fim da simulação.
+Time: 500 ns  Iteration: 0  Process: /tb_Soma2Maiores/controle  File: /home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/Comparador_Somador/Comparador_Somador.srcs/sources_1/new/tb_Soma2Maiores.vhd
+$finish called at time : 500 ns : File "/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/Comparador_Somador/Comparador_Somador.srcs/sources_1/new/tb_Soma2Maiores.vhd" Line 78

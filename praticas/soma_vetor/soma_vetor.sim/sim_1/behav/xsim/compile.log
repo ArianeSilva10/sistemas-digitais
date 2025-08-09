@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/soma_vetor/soma_vetor.srcs/sources_1/new/soma_vetor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'soma_vetor'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/soma_vetor/soma_vetor.srcs/sources_1/new/tb_soma_vetor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_soma_vetor'

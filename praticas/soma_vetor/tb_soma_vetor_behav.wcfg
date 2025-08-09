@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_soma_vetor_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_soma_vetor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="10 ps"></ZoomEndTime>
+      <Cursor1Time time="1,000,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="logic" fp_name="/tb_soma_vetor/s_clk">
+      <obj_property name="ElementShortName">s_clk</obj_property>
+      <obj_property name="ObjectShortName">s_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_soma_vetor/s_rst">
+      <obj_property name="ElementShortName">s_rst</obj_property>
+      <obj_property name="ObjectShortName">s_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_soma_vetor/s_start">
+      <obj_property name="ElementShortName">s_start</obj_property>
+      <obj_property name="ObjectShortName">s_start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_soma_vetor/s_data">
+      <obj_property name="ElementShortName">s_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_soma_vetor/s_soma">
+      <obj_property name="ElementShortName">s_soma[6:0]</obj_property>
+      <obj_property name="ObjectShortName">s_soma[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_soma_vetor/s_done">
+      <obj_property name="ElementShortName">s_done</obj_property>
+      <obj_property name="ObjectShortName">s_done</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_soma_vetor/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+</wave_config>

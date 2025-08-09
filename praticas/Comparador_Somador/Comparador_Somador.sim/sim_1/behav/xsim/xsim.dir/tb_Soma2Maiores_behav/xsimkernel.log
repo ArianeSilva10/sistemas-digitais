@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_Soma2Maiores_behav/xsimk -simmode gui -wdb tb_Soma2Maiores_behav.wdb -simrunnum 0 -socket 56329
+Design successfully loaded
+Design Loading Memory Usage: 180316 KB (Peak: 180436 KB)
+Design Loading CPU Usage: 1180 ms
+Simulation completed
+Simulation Memory Usage: 270252 KB (Peak: 319584 KB)
+Simulation CPU Usage: 1190 ms

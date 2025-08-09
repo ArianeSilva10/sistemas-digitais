@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Comparador_Somador.srcs/sources_1/new/Soma2Maiores.vhd" \
+"../../../../Comparador_Somador.srcs/sources_1/new/tb_Soma2Maiores.vhd" \
+
+# Do not sort compile order
+nosort

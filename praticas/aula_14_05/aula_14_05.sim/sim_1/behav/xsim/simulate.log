@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Fim da simulação.
+Time: 300 ns  Iteration: 0  Process: /tb_counter/controle  File: /home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/aula_14_05/aula_14_05.srcs/sources_1/new/tb_counter.vhd
+$finish called at time : 300 ns : File "/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/aula_14_05/aula_14_05.srcs/sources_1/new/tb_counter.vhd" Line 68

@@ -1,0 +1,21 @@
+0.7
+2020.2
+May 21 2025
+22:59:56
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/imports/new/psh_test.vhd,1752345289,vhdl,,,,tb_push_instruction,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/imports/new/tb_psh.vhd,1752846874,vhdl,,,,tb_psh,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/ULA.vhd,1753886784,vhdl,/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/datapath.vhd,,,ula,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/datapath.vhd,1753881862,vhdl,/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_full.vhd,,,datapath,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/fsm.vhd,1753905946,vhdl,/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_full.vhd,,,fsm,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/mux.vhd,1753362008,vhdl,/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/datapath.vhd,,,mux5x1,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/register_file.vhd,1753566849,vhdl,/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/datapath.vhd,,,register_file,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/registrador.vhd,1750180827,vhdl,/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/register_file.vhd,,,registrador,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_cmp.vhd,1752865717,vhdl,,,,tb_cmp,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_full.vhd,1753907776,vhdl,,,,tb_full,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_in.vhd,1753380330,vhdl,,,,tb_in,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_jeq.vhd,1752962012,vhdl,,,,tb_jeq,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_jgt.vhd,1753280814,vhdl,,,,tb_jgt,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_out_rm.vhd,1753554142,vhdl,,,,tb_out_rm,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_push_full.vhd,1752848335,vhdl,,,,tb_push_full,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_ror.vhd,1753815409,vhdl,,,,tb_ror,,,,,,,,
+/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/CPU/CPU.srcs/sources_1/new/tb_shr.vhd,1753448559,vhdl,,,,tb_shr,,,,,,,,

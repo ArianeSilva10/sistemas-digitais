@@ -1,0 +1,85 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE026BDBCE026BDBC",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../testeAula1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "teste_0": ""
+    },
+    "ports": {
+      "o0_0": {
+        "direction": "O"
+      },
+      "o1_0": {
+        "direction": "O"
+      },
+      "I0_0": {
+        "direction": "I"
+      },
+      "I1_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "teste_0": {
+        "vlnv": "xilinx.com:module_ref:teste:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_teste_0_0",
+        "xci_path": "ip/design_1_teste_0_0/design_1_teste_0_0.xci",
+        "inst_hier_path": "teste_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "teste",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I0": {
+            "direction": "I"
+          },
+          "I1": {
+            "direction": "I"
+          },
+          "o0": {
+            "direction": "O"
+          },
+          "o1": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "I0_0_1": {
+        "ports": [
+          "I0_0",
+          "teste_0/I0"
+        ]
+      },
+      "I1_0_1": {
+        "ports": [
+          "I1_0",
+          "teste_0/I1"
+        ]
+      },
+      "teste_0_o0": {
+        "ports": [
+          "teste_0/o0",
+          "o0_0"
+        ]
+      },
+      "teste_0_o1": {
+        "ports": [
+          "teste_0/o1",
+          "o1_0"
+        ]
+      }
+    }
+  }
+}

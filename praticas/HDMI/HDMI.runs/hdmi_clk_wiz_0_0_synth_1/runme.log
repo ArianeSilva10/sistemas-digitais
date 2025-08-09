@@ -1,0 +1,157 @@
+
+*** Running vivado
+    with args -log hdmi_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_clk_wiz_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Jul 11 15:00:41 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hdmi_clk_wiz_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1551.582 ; gain = 64.059 ; free physical = 237 ; free virtual = 4493
+Command: synth_design -top hdmi_clk_wiz_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22535
+
+*** Running vivado
+    with args -log hdmi_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_clk_wiz_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Jul 11 15:03:43 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hdmi_clk_wiz_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1592.809 ; gain = 64.059 ; free physical = 154 ; free virtual = 6484
+Command: synth_design -top hdmi_clk_wiz_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26614
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2127.848 ; gain = 441.711 ; free physical = 235 ; free virtual = 4957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_clk_wiz_0_0' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_clk_wiz_0_0_clk_wiz' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_clk_wiz.v:65]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 4.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_clk_wiz_0_0_clk_wiz' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_clk_wiz.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_clk_wiz_0_0' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:35 . Memory (MB): peak = 2201.816 ; gain = 515.680 ; free physical = 242 ; free virtual = 3777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 2216.660 ; gain = 530.523 ; free physical = 239 ; free virtual = 3695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 2216.660 ; gain = 530.523 ; free physical = 239 ; free virtual = 3695
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log hdmi_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_clk_wiz_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Jul 11 15:08:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source hdmi_clk_wiz_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1592.809 ; gain = 64.059 ; free physical = 157 ; free virtual = 6482
+Command: synth_design -top hdmi_clk_wiz_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30686
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2127.848 ; gain = 439.742 ; free physical = 274 ; free virtual = 5356
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_clk_wiz_0_0' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_clk_wiz_0_0_clk_wiz' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_clk_wiz.v:65]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76868]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 4.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_clk_wiz_0_0_clk_wiz' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_clk_wiz.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_clk_wiz_0_0' (0#1) [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.v:65]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 2201.816 ; gain = 513.711 ; free physical = 243 ; free virtual = 4447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 2213.691 ; gain = 525.586 ; free physical = 257 ; free virtual = 4406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 2213.691 ; gain = 525.586 ; free physical = 255 ; free virtual = 4404
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.29 . Memory (MB): peak = 2219.629 ; gain = 0.000 ; free physical = 240 ; free virtual = 4253
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/praticas/HDMI/HDMI.gen/sources_1/bd/hdmi/ip/hdmi_clk_wiz_0_0/hdmi_clk_wiz_0_0.xdc] for cell 'inst'

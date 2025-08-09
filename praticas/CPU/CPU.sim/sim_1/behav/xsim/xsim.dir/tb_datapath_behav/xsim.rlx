@@ -1,0 +1,12 @@
+
+{ 
+    crc :  12268105966556436102  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot tb_datapath_behav xil_defaultlib.tb_datapath" , 
+    buildDate : "May 21 2025" , 
+    buildTime : "22:59:56" , 
+    linkCmd : "/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/lib/lnx64.o/../../tps/lnx64/gcc-9.3.0/bin/g++ -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_datapath_behav/xsimk\"   \"xsim.dir/tb_datapath_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_datapath_behav/obj/xsim_1.lnx64.o\" -L\"/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/lib/lnx64.o\" -lxv_simulator_kernel    -L/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/lib/lnx64.o/../../tps/lnx64/gcc-9.3.0/bin/../lib64 -Wl,--disable-new-dtags -Wl,-rpath=/home/ariane/Documentos/faculdade/semestre_5/sistemas_digitais/Xilinx2025/2025.1/Vivado/lib/lnx64.o/../../tps/lnx64/gcc-9.3.0/bin/../lib64 -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

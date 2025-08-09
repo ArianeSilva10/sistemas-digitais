@@ -1,0 +1,15 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.30508",
+   "Default View_TopLeft":"-600,53",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace inst datapath_0 -pg 1 -lvl 1 -x -430 -y 200 -defaultsOSRD
+preplace inst register_file_0 -pg 1 -lvl 3 -x 160 -y 210 -defaultsOSRD
+preplace inst mux4x1_0 -pg 1 -lvl 2 -x -110 -y 200 -defaultsOSRD
+levelinfo -pg 1 -590 -430 -110 160 300
+pagesize -pg 1 -db -bbox -sgen -590 -140 300 560
+"
+}
+0

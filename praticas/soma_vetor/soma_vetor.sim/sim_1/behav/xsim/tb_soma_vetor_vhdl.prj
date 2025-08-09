@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../soma_vetor.srcs/sources_1/new/soma_vetor.vhd" \
+"../../../../soma_vetor.srcs/sources_1/new/tb_soma_vetor.vhd" \
+
+# Do not sort compile order
+nosort
