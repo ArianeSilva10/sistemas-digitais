@@ -1,0 +1,239 @@
+mov rd, #immd
+
+ex: 
+	mov r0, #5
+	
+	
+	rd_sel = 0
+	rd_wr = 1
+	sel_muk= 2
+	immd = 5
+
+
+
+
+
+----------------------------------------------------------------------------------
+-- Create Date: 05/23/2025 01:43:28 PM
+-- Design Name: 
+-- Module Name: datapath - Behavioral
+-- Project Name: 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity datapath is
+    Generic (N :integer  := 16);
+    Port(
+        -- Portas do Registrador File
+        rn_sel : in std_logic_vector (2 downto 0);
+        rm_sel: in std_logic_vector (2 downto 0);
+        rd_sel: in std_logic_vector (2 downto 0);
+        rd_wr: in std_logic;
+        
+        -- ULA
+        op_ula: in std_logic_vector (3 downto 0);
+        
+        -- mux rd
+        din_ram: in std_logic_vector (N-1 downto 0);
+        rd_immd: in std_logic_vector (N-1 downto 0);
+        sel_rd_mux: in std_logic_vector (1 downto 0);
+        
+        -- clock e reset
+        clk :in std_logic;
+        rst :in std_logic 
+    );
+end datapath;
+
+architecture Behavioral of datapath is
+    signal  s_rd: std_logic_vector (N-1 downto 0);
+    signal  s_rm: std_logic_vector (N-1 downto 0);
+    signal  s_rn: std_logic_vector (N-1 downto 0);
+    signal s_Q: std_logic_vector (N-1 downto 0);
+begin
+
+RF:
+    entity work.register_file
+    generic map(N => N)
+    port map(
+         -- Portas do Registrador File
+        rn_sel => rn_sel,
+        rm_sel => rm_sel,
+        rd_sel => rd_sel,
+        rd_wr => rd_wr,
+        Rd => s_rd,
+        Rm => s_rm,
+        Rn => s_rn,
+        clk => clk,
+        rst => rst
+    );
+
+ULA:
+    entity work.ula 
+    generic map(N_BITS => N)
+    port map(
+        A => s_rm,
+        B => s_rn,
+        op => op_ula
+    );
+
+ MuxRd:
+    entity work.mux4x1
+    generic map(N => N)
+    Port map(
+        I0 => s_rm,
+        I1 => rd_ram,
+        I2 => rd_immd,
+        I3 => s_Q,
+        sel => sel_rd_mux,
+        o0 => s_rd
+    );
+
+end Behavioral;
+
+
+
+
+mux.vhd
+
+----------------------------------------------------------------------------------
+-- Create Date: 05/23/2025 01:55:51 PM
+-- Design Name: 
+-- Module Name: mux - Behavioral
+-- Project Name: 
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity mux4x1 is
+    generic (N : integer:= 16);
+    Port(
+        I0: in std_logic_vector (N-1 downto 0);
+        I1: in std_logic_vector (N-1 downto 0);
+        I2: in std_logic_vector (N-1 downto 0);
+        I3: in std_logic_vector (N-1 downto 0);
+        sel: in std_logic_vector (1 downto 0);
+        o0: out std_logic_vector (N-1 downto 0)
+    );
+    
+end mux4x1;
+
+architecture Behavioral of mux4x1 is
+
+begin
+
+o0 <= I0 when sel ="00" else
+    I1 when sel ="01" else
+    I2 when sel ="10" else
+    I3 when sel ="11" else
+    i0;
+
+end Behavioral;
+
+
+//////////////////////////////////////////////////////
+register file:
+
+
+
+----------------------------------------------------------------------------------
+-- Create Date: 05/21/2025 04:18:59 PM
+-- Design Name: 
+-- Module Name: register_file - Behavioral
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity register_file is
+    generic (N : integer:= 16);
+    Port ( Rm_sel : in STD_LOGIC_VECTOR (2 downto 0);
+           Rn_sel : in STD_LOGIC_VECTOR (2 downto 0);
+           Rd_sel : in STD_LOGIC_VECTOR (2 downto 0);
+           Rm : out STD_LOGIC_VECTOR (N-1 downto 0);
+           Rn : out STD_LOGIC_VECTOR (N-1 downto 0);
+           Rd : in STD_LOGIC_VECTOR (N-1 downto 0);
+           Rd_wr : in STD_LOGIC;
+           clk : in STD_LOGIC;
+           rst : in STD_LOGIC);
+end register_file;
+
+architecture Behavioral of register_file is
+
+
+    signal s_ld : std_logic_vector  (7 downto 0);
+    signal q0,q1,q2,q3,q4,q5,q6,q7 : std_logic_vector  (N-1 downto 0);
+
+begin
+
+    R0: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q0, ld => s_ld(0));
+    R1: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q1, ld => s_ld(1));
+    R2: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q2, ld =>s_ld(2));
+    R3: entity work.registrador
+    generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q3, ld =>s_ld(3));
+    R4: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q4, ld =>s_ld(4));
+    R5: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q5, ld =>s_ld(5));
+    R6: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q6, ld =>s_ld(6));
+    R7: entity work.registrador
+        generic map(N => 16)
+        port map(clk => clk, rst => rst, d => Rd, q => q7, ld =>s_ld(7));
+
+    -- saida Rm DMUX
+    Rm <= q0 when Rm_sel = "000" else
+        q1 when Rm_sel = "001" else
+        q2 when Rm_sel = "010" else
+        q3 when Rm_sel = "011" else
+        q4 when Rm_sel = "100" else
+        q5 when Rm_sel = "101" else
+        q6 when Rm_sel = "110" else
+        q7 when Rm_sel = "111" else
+        q0 ;                                     -- quando ele nao eh ninguem vai ser r0
+
+
+    -- saida Rn DMUX
+    Rn <= q0 when Rn_sel = "000" else
+        q1 when Rn_sel = "001" else
+        q2 when Rn_sel = "010" else
+        q3 when Rn_sel = "011" else
+        q4 when Rn_sel = "100" else
+        q5 when Rn_sel = "101" else
+        q6 when Rn_sel = "110" else
+        q7 when Rn_sel = "111" else
+        q0 ;                                     -- quando ele nao eh ninguem vai ser r0
+        
+        
+    -- Entrada Rd DMUX
+    s_ld(0) <= Rd_wr when Rd_sel = "000" else '0';
+    s_ld(1) <= Rd_wr when Rd_sel = "001" else '0';
+    s_ld(2) <= Rd_wr when Rd_sel = "010" else '0';
+    s_ld(3) <= Rd_wr when Rd_sel = "011" else '0';
+    s_ld(4) <= Rd_wr when Rd_sel = "100" else '0';
+    s_ld(5) <= Rd_wr when Rd_sel = "101" else '0';
+    s_ld(6) <= Rd_wr when Rd_sel = "110" else '0';
+    s_ld(7) <= Rd_wr when Rd_sel = "111" else '0';
+    
+        
+end Behavioral;
+
