@@ -1,5 +1,4 @@
 
-arianEl$nd4
 
 ~/Documentos/sistemas_digitais/Vivado/2024.2   15:38:36   5ms⠀
 $ source settings64.sh
